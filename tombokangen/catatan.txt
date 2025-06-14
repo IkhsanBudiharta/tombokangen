@@ -1,0 +1,7 @@
+1. Pemesan harus login untuk dapat memproses chechout. jika blm maka saat masuk halaman "pesanan" akan diarahkan ke login 
+2. pada navigasi bar "masuk" berubah jadi "keluar" saat user berhasil login
+3. crud 
+4. membuat database dan koneksi
+5. buat login user dan admin pada halaman login yg sama
+6. jika menambah menu dgn kategori makanan / minuman otomatis ter sortir sesuai kategori
+8. kalo menunya tidak tersedia dari admin nya maka card menu tidak akan bisa di klik

@@ -1,0 +1,358 @@
+/* =============================================*\
+|  ================== Navbar =================== |
+\* ============================================ */
+
+
+.navbar {
+    max-width: 97%;
+    margin: 0 auto; /* Pastikan posisinya tetap di tengah */
+}
+
+.nav-link {
+    color: #000;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #d4a89c;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-radius: 0;
+}
+
+/* =============================================*\
+|  ================== Header =================== |
+\* ============================================ */
+
+.header-title {
+    font-size: 9vw; /* Menggunakan unit fleksibel untuk ukuran font */
+    font-weight: 400;
+    color: white;
+    line-height: 1.2;
+}
+
+.header-wrapper {
+    margin-top: 4rem;
+    background-image: url("https://images.unsplash.com/photo-1635922996618-e9945dc17079?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 74vh;
+    max-width: 96%;
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+.content-text {
+    font-size: 1rem;
+    color: white;
+}
+
+.to-request {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.to-request:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+            /* =============================================*\
+            |  =========== Responsive Index.Html =========== |
+            \* ============================================ */
+            @media (max-width: 768px) {
+                .header-title {
+                    font-size: 8vw; /* Ukuran font lebih kecil di layar medium */
+                }
+
+                .header-wrapper {
+                    margin-top: 2rem; /* Kurangi margin pada layar kecil */
+                }
+                .navbar-nav {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+                
+                .navbar-nav .nav-item {
+                    flex: 1;
+                }
+                
+                .navbar-nav .nav-link {
+                    text-align: center;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .header-title {
+                    font-size: 12vw; /* Ukuran font lebih kecil di layar kecil */
+                }
+
+                .content-text {
+                    font-size: 0.9rem; /* Kurangi ukuran teks deskripsi */
+                }
+
+                .to-request {
+                    font-size: 0.9rem; /* Ukuran tombol lebih kecil */
+                }
+
+                .header-wrapper {
+                    margin-top: 1rem; /* Margin lebih kecil untuk layar kecil */
+                    width: 94%; 
+                    max-width: 100%;
+                    margin-left: auto; 
+                    margin-right: auto; 
+                }
+            }
+
+
+/* =============================================*\
+|  =================== Menu ==================== |
+\* ============================================ */
+
+.menu-card {
+    display: flex;
+    flex-direction: row; /* Atur elemen secara horizontal */
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+    border-radius: 0;
+  }
+
+  .menu-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-card img {
+    flex-shrink: 0; /* Pastikan gambar tidak menyusut */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0;
+    margin-right: 15px; /* Tambahkan jarak antara gambar dan teks */
+  }
+
+  .menu-card-body {
+    margin-left: 15px;
+    flex-grow: 1; /* Biarkan bagian teks menyesuaikan ruang */
+  }
+
+  .menu-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .menu-desc {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+  .menu-price {
+    font-weight: bold;
+    color: #ff7f50;
+  }
+
+  .floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d4a89c;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .floating-icon .icon-link {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .floating-icon:hover {
+    background-color: #c08a76;
+  }
+
+/* =============================================*\
+|  ================ Menu Detail ================ |
+\* ============================================ */
+
+.button-pesan {
+    background-color: #d4a89c;
+    color: white;
+    border-radius: 0;
+}
+
+.button-pesan:hover {
+    background-color: #c08a76;
+    color: white;
+}
+
+.header-wrapper-menu-detail {
+    margin-top: 4rem; /* Mendorong bagian tulisan ke bawah */
+    background-color: darkgrey;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 74vh;
+    max-width: 96%; /* Atur lebar maksimal menjadi 90% layar */
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+            /* =============================================*\
+            |  ========== Responsive Menu Detail =========== |
+            \* ============================================ */
+            @media (max-width: 768px) {
+                .header-wrapper-menu-detail {
+                    margin-top: 2rem; /* Kurangi margin pada layar kecil */
+                }
+            }
+
+            @media (max-width: 576px) {
+                .header-wrapper-menu-detail {
+                    margin-top: 1rem; /* Margin lebih kecil untuk layar kecil */
+                    width: 94%; 
+                    max-width: 100%;
+                    margin-left: auto; 
+                    margin-right: auto; 
+                }
+            }
+
+/* =============================================*\
+|  ================== Pesanan ================== |
+\* ============================================ */
+
+.header-wrapper-pesanan {
+    margin-top: 4rem; 
+    min-height: 74vh;
+    max-width: 96%; 
+    margin-left: auto;  
+    margin-right: auto;
+    align-items: flex-start !important; 
+}
+
+.card-pesanan {
+    height: fit-content; 
+}
+.card-pesanan img {
+    border-radius: 0 !important;
+}
+
+.card-pesanan p {
+    font-size: 0.9rem;
+}
+            /* =============================================*\
+            |  ============ Responsive Pesanan ============= |
+            \* ============================================ */
+            @media (max-width: 768px) {
+
+            .header-wrapper-pesanan {
+                margin-top: 2rem; /* Kurangi margin pada layar kecil */
+            }
+        }
+
+            @media (max-width: 576px) {
+
+                .header-wrapper-pesanan {
+                    margin-top: 1rem;
+                    width: 94%; /* Ubah dari 100% ke 94% */
+                    max-width: 100%;
+                    margin-left: auto; 
+                    margin-right: auto; 
+                }
+                .card-pesanan img {
+                    width: 100%;
+                }
+                .input-group {
+                    margin-top: 10px;
+                }
+                .card-title {
+                    margin-top: 10px;
+                }
+                .card-pesanan {
+                    width: 100%;
+                }
+                .order-summary {
+                    margin-top: 120px;
+                }
+            }
+            @media (max-width: 768px) {
+                .order-summary {
+                    margin-top: 0.5px !important;
+                }
+            }
+            
+
+/* =============================================*\
+|  =============== Semua Pesanan =============== |
+\* ============================================ */
+
+/* =============================================*\
+|  =================== Footer ================== |
+\* ============================================ */
+
+.footer {
+    max-width: 97%;
+    margin: 0 auto; /* Pastikan posisinya tetap di tengah */
+}
+
+.card {
+    padding: 2% 7%
+}
+
+.divider {
+    border-top: 2px solid
+}
+/* =============================================*\
+|  =============== Tentang Kami ================ |
+\* ============================================ */
+
+.header-wrapper-tentang {
+    margin-top: 4rem; 
+    background-color: darkgrey;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 74vh;
+    max-width: 96%; 
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+            /* =============================================*\
+            |  ========== Responsive Tentang Kami ========== |
+            \* ============================================ */
+            @media (max-width: 768px) {
+                .header-wrapper-tentang {
+                    margin-top: 2rem; /* Kurangi margin pada layar kecil */
+                }
+            }
+
+            @media (max-width: 576px) {
+                .header-wrapper-tentang {
+                    margin-top: 1rem; /* Margin lebih kecil untuk layar kecil */
+                    width: 94%; 
+                    max-width: 100%;
+                    margin-left: auto; 
+                    margin-right: auto; 
+                }
+            }
+
+/* =============================================*\
+|  =================== Masuk =================== |
+\* ============================================ */
+
+/* =============================================*\
+|  =================== Daftar ================== |
+\* ============================================ */
